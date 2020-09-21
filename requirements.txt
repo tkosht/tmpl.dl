@@ -40,4 +40,5 @@ python-dotenv
 torch
 torchvision
 torchtext
+pytorch-forecasting
 pyro-ppl

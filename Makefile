@@ -32,7 +32,7 @@ mlflow-ui: up
 	docker-compose exec app mlflow ui --host=0.0.0.0
 
 tensorboard: up
-	$(eval logdir:=$(shell ls -trd app/mlruns/0/* | tail -n 1 | perl -pe 's:^app/::'))
+	$(eval logdir:=$(shell ls -trd result/* | tail -n 1))
 	echo $(logdir)
 	docker-compose exec app tensorboard --host=0.0.0.0 --logdir=$(logdir)
 

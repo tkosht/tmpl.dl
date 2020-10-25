@@ -8,7 +8,6 @@ RUN apt-get update -y && apt-get upgrade -y \
     && apt-get install -y sudo build-essential autoconf jq \
         vim tmux tzdata locales dialog git \
         libsnappy-dev \
-        texlive-xetex texlive-fonts-recommended texlive-generic-recommended \
     && localedef -f UTF-8 -i ja_JP ja_JP.UTF-8
 
 RUN apt-get install -y --no-install-recommends \
